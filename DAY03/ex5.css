@@ -1,17 +1,21 @@
 div{
     border: solid 1px gray;
-    width: 500px;
+    width: 450px;
     text-align: center ;
     margin:10px;
 }
+.box1{
+    padding-top: 50px;
+}
 .mainlogo{
     width: 200px;
+    padding-bottom: 20px;
 }
 .namebox,.passwordbox{
     padding: 10px;
     width: 300px;
     margin-top: 10px;
-    border: solid 1px gray;
+    border: solid 1px rgb(163, 162, 162);
     background-color: rgb(235, 235, 235);
     border-radius: 3px;
 }
@@ -26,16 +30,31 @@ div{
     font-weight: bold;
     font-size: 15px;
 }
-.facebook{
+.facebooklogo{
+    display: inline;
+    width: 20px;
+}
+.facebook{  
+    display: inline;
     font-weight: bold;
     color: rgb(7, 7, 134);
 }
 .password{
-    font-size: 10px;
+    font-size: 13px;
     color: rgb(3, 3, 88);
-    
+    display: block;
+    margin: 10px;   
 }
 .box2{
-    margin: 20px 10px;
-    padding: 10px ;
+    box-sizing: border-box;
+    display: block;
+    margin: 15px 10px;
+    padding: 25px ;
+}
+.join{
+    font-weight: bold;
+    color: rgb(0, 174, 255);
+}
+a{
+    text-decoration: none;
 }
