@@ -1,0 +1,31 @@
+/*선택자 활용*/
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    border-left: solid 8px green;
+}
+ul{
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 400px;
+    background-color: rgb(230, 230, 230);
+    padding: 40px;
+}
+li{
+    margin-bottom: 15px;
+}
+div{
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 280px;
+    padding: 30px 20px;
+    margin: 10px 30px;
+}
+.contp{
+    border-bottom: dotted 1px gray;
+    padding-bottom: 20px;
+    line-height: 160%;
+}
+.go{
+    text-align: right;
+}

@@ -1,0 +1,28 @@
+body{
+    border: solid 1px gray;
+    width: 550px;
+    margin: 10px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.info{
+    border-top: solid 1px gray;
+    padding: 20px 10px;
+    padding: 10px;
+    line-height: 160%;
+}
+p{
+  font-size: 18px;  
+}
+.number{
+    color: orange;
+    font-weight: bold;
+}

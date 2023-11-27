@@ -1,3 +1,8 @@
+HTML : 하이퍼텍스트 마크업 언어 (HyperText Markup Language)
+    HTTP : HTML(하이퍼텍스트 전송 프로토콜) 통신 규약
+        -HTML 전송 규약
+        예 : http://www.naver.com
+
 
 마크업 이란
     -컴퓨터가 기능을 이해할 수 있는 HTML의 문법
@@ -12,6 +17,9 @@
     -다락 마크업
 3.<br/>
     -줄바꿈
+3.<hr/>
+    -가로 구분선
+
 4.
     1.<ul>  - 글머리 목록
         <li>    -목록에 항목
@@ -73,7 +81,7 @@
             type="email"    : 이메일 형식 [@ 필수입력]
             type="color"    : 색상
             type="date"     : 날짜
-            type="datetime-local"   : 날짜/시간
+            type="datetime-local" : 날짜/시간
             type="month"    : 날짜[월]
             type="time"     : 시간
             type="week"     : 주
