@@ -1,0 +1,129 @@
+/*기본 여백 제거 1. 직접제거 2.css/cdn파일*/
+*{
+    padding: 0; margin: 0;
+}
+a{
+    color: black; text-decoration: none;
+}
+body{
+    background-color: #f5f6f7;
+}
+#wrap{
+    width: 400px;
+    margin: 0 auto;
+}
+/*==========헤더==========*/
+#headerLogo{
+    text-align: center;
+    margin: 50px 0;
+}
+#headerLogo img{
+    height: 50px;
+}
+
+/*==========본문==========*/
+
+/*------------------1.입력상자 만들기------------------*/
+.inputBox{
+    background-color: white;
+    border: 1px solid #dedede;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap; /*기본값 생략가능*/
+    align-items: center;    /*align-items 세로정렬*/
+}
+.inputBox input, select{
+    border: none;
+    background-color: white; 
+    height: 30px;
+    width: 100%;
+}
+.inputBox span{
+    color: #b5b5be;
+}
+/*focus 포커스 : 커서가 깜박거림 상태*/
+*:focus{outline: none;} /*선택했을때 아웃라인 상태*/
+/*----------------------------------------------------*/
+
+h5{
+    margin: 10px 0 5px 0;
+}
+.inputIcon{
+    width: 25px;
+    height: 25px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-size: 120px 75px;    /*가로 세로 사이즈*/
+}
+#pwIcon{
+    background-position-x: 0px;     /*x축의 위치*/
+    background-position-y: 0px;     /*y축의 위치*/
+    /*background-position: left top; 가능하지만 세부 조정 불가*/  
+}
+#pwComfirmIcon{
+    background-position-x: -50px;     
+    background-position-y: 0px;      
+}
+
+#birthBox{
+    display: flex;
+    justify-content: space-between;
+}
+.birthY, .birthM, .birthD{
+    width: 100px;
+}
+.titleAt{
+    font-size: 10px;
+    color: #b5b5be;
+}
+
+#phoneBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#phoneBox > input {
+    background-color: #03c75a;
+    border: none; 
+    color: white;
+    font-weight: bold;
+    width: 120px;
+}
+#phoneBox > div{
+    width: 250px;
+}
+/*
+    #phoneBox input : 자손
+    #phoneBox > input : 자식
+*/
+#inputAuth, #inputAuth > input {
+    background-color:  #f5f6f7;
+}
+
+#signupBtn{
+    background-color: #03c75a;
+    border: none; 
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+/*==========푸터==========*/
+#footerBox{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#ftTop {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+#ftBottom img{
+    height: 10px;
+}
+#ftBottom span{
+    font-size: 5px;
+}
+
+    
