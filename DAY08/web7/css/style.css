@@ -1,0 +1,243 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #121212;
+}
+.ffJosefin{
+    font-family: 'Josefin Sans',sans-serif;
+}
+.innerWrap{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+main h2{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 0.05em; /*글자 간격*/
+    margin-bottom: 80px;
+}
+header{
+    background: url(../images/bg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover ;
+}
+header .innerWrap{
+    height: 720px;
+    position: relative;
+}
+header h1 {
+    padding-top: 120px;  
+}
+header .scroll{
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+header .scroll img{
+    margin-top: 8px;
+}
+header nav{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 100;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+.msgSec{
+    background-color: #fbfaf7;
+}
+.msgSec p{
+    text-align: center;
+    line-height: 1.75; /*= 175%*/
+    margin-bottom: 40px;
+}
+.msgSec p.illust{
+    margin-top:80px ;
+    margin-bottom: 0;
+    position: relative;
+}
+.msgSec p.illust::before{
+    content: url(../images/deco_left.png);
+    position: absolute; left: 320px; bottom: -15px;
+}
+.msgSec p.illust::after{
+    content: url(../images/deco_right.png);
+    position: absolute; right: 320px; bottom: -15px;
+}
+.dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+.dateSec .layoutWrap{
+    display: flex;
+}
+.dateSec .layoutWrap>p{
+    flex-basis: 735px;
+}
+.dateSec .layoutWrap>div{
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+.dateSec .dateDetailSec{
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: #ffffff;
+    padding: 40px 64px;
+    line-height: 1.2;
+}
+.word1{font-size: 50px;}
+.word2{font-size: 40px;}
+.word3{font-size: 60px;}
+.accessSec{
+    margin-left: 48px;
+}
+.accessSec h3{
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em; /*자간*/
+    margin-bottom: 8px;
+}
+.accessSec p{
+    line-height: 1.6;
+}
+.formSec {
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+input[type="text"] , /*input 중에 타입이 text이면 선택*/
+input[type="email"] ,
+select,
+textarea{
+    border:  1px solid #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 4px 8px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 16px;
+    height: 16xp;
+    vertical-align: baseline;
+    margin-right: 4px;
+}
+.attendRadio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.attendRadio label{
+    margin: 0 20px;
+    font-size: 24px;
+}
+.allergyCheck label{
+    margin-right: 24px;
+}
+select{
+    background : white url(../images/arrow.png) no-repeat 98% 50%/17px 10px;
+}
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+form > p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.submitBtn{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #121212;
+    color: #ffffff;
+    padding: 18px 80px;
+}
+footer{
+    background-color: #c7887f;
+    color: #f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+/*p.163 패럴랙스 효과*/
+.dateSec{margin-bottom: 480px;} /*배경이 보여질 여백 만들기*/
+/*가상 요소 선택자 이용한 이미지(배경) 삽입*/
+.dateSec::after{
+    content: "";    /*배경을 넣을 예정이라서 내용물은 없는 상태 */
+    position: fixed;    /*스크롤을 움직여도 고정*/
+    left: 0; top: 0; width: 100%; height: 100%; /*화면 가득 채우기*/
+    background: url(../images/bg2.jpg) no-repeat center/cover;
+    z-index: -1;    /*기본 요소들보다 아래에 배치*/
+}
+
+/*p.165 애니메이션 효과*/
+input[type="submit"]:hover{
+    background-color: #c7887f;
+    margin-left:20px ;
+    transition-property: background-color,margin-left ; /*효과를 적용할 대상 선택*/
+    transition-duration: 300ms; /*효과를 적용할 소요시간 : 0.3초;*/
+    transition-timing-function: ease-in;    /*변화방식 : 시작 천천히 끝 빨리;*/
+    transition-delay: 0ms;  /*지연 시간 없음*/
+}
+
+
+/*p.167 키프레임 애니메이션*/
+@keyframes scrollAnimation {/*@keyframes 사용할 애니메이션명*/
+ 0%{transform: scaleY(0); transform-origin: top;}/*스크롤이 0% 일때[시작점]*/   
+ 50%{transform: scaleY(1); transform-origin: top;}/*스크롤이 50% 일때[가운데 이전]*/
+ 50.1%{transform: scaleY(1); transform-origin: bottom;}/*스크롤이 50.1% 일때[가운데 이후]*/
+ 100%{transform: scaleY(0); transform-origin: bottom;}/*스크롤이 100% 일때[종료점]*/
+}
+/*p169 키프레임에 애니메이션 적용*/
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+/*
+    p.illust{}  : p 요소의 class명이 illust이면
+    .illust{}   : 전체요소의 class명이 illust 이면
+*/
+/*
+    p.150
+    !important > style 속성 > id > class > 타입 > *
+    1. p{text-size : 16px !important;}
+    2. <div style="text-size:16px;">
+    3. #id{text-size : 16px;}
+    4. .class{text-size : 16px;}
+    5. p{text-size : 16px;}
+    6. *{text-size : 16px;}
+
+    p.151~152
+    -HTML에 없던 내용물[주로 텍스트나 이미지]을 CSS에서 넣어주기 가능한 기능-
+    ::before    : 요소 앞부분에 내용물을 가상으로 넣어주기
+    ::after     : 요소 뒷부분에 내용물을 가상으로 넣어주기
+        content : 가상 요소의 내용물
+
+    flex-basis: 465px;  : 유연성
+        vs
+    width: 465px;       : 고정
+        차이점 : 1. flex-direction: column; 일때
+                width : 고정    flex-basis : 전체사이즈 늘어남.
+                2. 요소보닫 더 큰 컨텐츠가 들어왔을때.
+                width : 고정    flex-basis : 같이 늘어남.
+*/
+
