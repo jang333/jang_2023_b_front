@@ -31,10 +31,11 @@ function 문제10(){
 function 문제9(){
     const line1 = Number(document.querySelector('#line9').value)
     let html1 = ``;
-    for(let r =1 ; r <= line1/2 ; r ++){//행
+    for(let r =1 ; r <= line1/2+1 ; r ++){//행
         html1+=`<tr>`;
         for(let c =1 ; c <= line1 ; c++){
         if(c+r >=6 || c+r == line1*2 ){html1 += `<td>★</td>`}
+        else if(r-c){html1 += `<td>☆</td>`}
         else{html1 += `<td>☆</td>`}
         }html1+=`</tr>`
 

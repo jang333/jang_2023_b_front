@@ -1,0 +1,46 @@
+@font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+/*공통 css*/
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family:'DNFBitBitv2';
+}
+
+/*전체구역*/
+#wrap{width: 300px; margin: 0 auto;}
+
+/*쓰기구역*/
+#todoTop{display: flex; height: 40px;}
+#content{
+    width: 250px; padding: 10px; 
+    border: none; box-shadow: 0px 0px 3px orange;
+}
+#todoTop > input[type="button"]{
+    width: 50px; padding: 10px;
+    border: none; box-shadow: 0px 0px 3px orange;
+    background-color: orange;
+    cursor: pointer;
+}
+
+/*출력구역*/
+.todo{
+    display: flex;
+    justify-content: space-between; /*가로*/
+    align-items: center; /*세로*/
+    font-size: 20px;
+    margin: 20px 1px; padding: 10px 10px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.todo > .btnBox > input{
+    font-size: 13px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.success{background-color: gray;}
+.success > .content{text-decoration: line-through; color: white;}
+
