@@ -6,7 +6,6 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <div id="wrap">
@@ -14,22 +13,28 @@
         <div id="content">
             <ul>
                 <li>
-                    제품명 : <input id="itemName" type="text"/>
+                    상품사진 <input id="itemImg" type="file"/>
                 </li>
                 <li>
-                    가격 : <input id="itemPrice" type="text"/>
+                    제품명 <input id="itemName" type="text"/>
                 </li>
                 <li>
-                    수량 : <input id="itemCnt" type="text"/>
+                    가격 <input id="itemPrice" type="text"/>
+                </li>
+                <li>
+                    수량 <input id="itemCnt" type="text"/>
                 </li>
                 <li>
                     <input onclick="등록()" type="button" value="등록">
                 </li>
             </ul>
         </div>
-        <table>
+        <table id="table">
             <thead>
                 <tr>
+                    <th>
+                        상품이미지
+                    </th>
                     <th>
                         제품명
                     </th>
@@ -45,28 +50,30 @@
                 </tr>
             </thead>
             <tbody>
+                
+            </tbody>
+        </table>
+        <table id="table2">
+            <thead>
                 <tr>
-                    <td>
-                        test
-                    </td>
-                    <td>
-                        50000
-                    </td>
-                    <td>
-                        10개
-                    </td>
-                    <td>
-                        <input onclick="구매()" type="button" value="구매">
-                    </td>
-                    <td>
-                        <input onclick="수정()" type="button" value="수정">
-                    </td>
+                    <th>
+                        날짜
+                    </th>
+                    <th>
+                        제품명
+                    </th>
+                    <th>
+                        가격
+                    </th>
                 </tr>
+            </thead>
+            <tbody>
             </tbody>
         </table>
         <div id="sum">
-            총합계 :
+
         </div>
     </div>
+    <script src='main.js'></script>
 </body>
 </html>
