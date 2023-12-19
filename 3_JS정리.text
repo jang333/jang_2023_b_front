@@ -357,7 +357,7 @@ JAVA 와 JAVAScript 다르다.
         배열.indexOf(값);
             -배열 내 동일한 값이 있으면 인데스번호 반환 / 없으면 -1
 
-- 객체
+- 객체 Object
     - 실제로 존재하는 사물을 의미 [실제 존재하는 것]
     - key와 value를 한쌍의 속성property
         property        key : value
