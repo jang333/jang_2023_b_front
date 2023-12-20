@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='step1.css'>
+    
+</head>
+<body>
+    <div id="wrap"> <!--전체구역-->
+        <div id="header">
+            <img src="img/main1.png">
+            <ul>
+
+
+            </ul>
+        </div>
+        <div id="main">
+            <div id="productBox">
+                <!--제품1개-->
+                                 
+            </div>
+            <div id="cartBox">
+                <div id="cartContent">
+                    <div id="cartTop">
+                        <div>카트<span id="count">0</span></div>
+                        <div>총 주문금액<span id="total">0원</span></div>
+                    </div>
+                    <div id="cartBottom">
+                        <!--카트에 담긴 제품 1개-->
+                                             
+                    </div>
+                </div>
+                <div>
+                    <!--장바구니 제품들이 출력될 구역 JS-->
+                </div>
+                <div id="cartBtns">
+                    <input type="button" value="취소하기"/>
+                    <input type="button" value="주문하기"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>관리자 메뉴</h3>
+        <div>
+            <h3>카테고리 등록</h3>
+            <input id="cname" type="text"/>
+            <input onclick="등록()" type="button" value="등록"/>
+        </div>
+        <div>
+            <h3>제품 등록</h3>
+        </div>
+    </div>
+    <script src='step1.js'></script>
+</body>
+</html>
